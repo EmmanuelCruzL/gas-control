@@ -16,6 +16,7 @@ namespace gas_control
         Timer timerFast = new Timer();
         Timer timerLow = new Timer();
         randomNumber random = new randomNumber();
+        
         public gasControlForm()
         {
             InitializeComponent();
@@ -56,22 +57,27 @@ namespace gas_control
 
         void enableTimer(bool opt)
         {
+            btnIniciar.Text = ">>";
             timerLow.Enabled = opt;
             timerFast.Enabled = opt;
+           
+
         }
 
         private void txtPausar_Click(object sender, EventArgs e)
         {
             enableTimer(false);
-            txtIniciar.Text = "REANUDAR";
+            
         }
 
         private void txtIniciar_Click(object sender, EventArgs e)
         {
             enableTimer(true);
-            if(txtIniciar.Text == "REANUDAR")
+           
+            if(btnIniciar.Text == ">>" )
             {
-                txtIniciar.Text = "INICIAR";
+                btnIniciar.Text = ">";
+                
             }
 
 
@@ -83,6 +89,11 @@ namespace gas_control
         private void gasControlForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             enableTimer(false);
+        }
+
+        private void gasControlForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gasControlForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.txtZzp = new System.Windows.Forms.RichTextBox();
@@ -62,8 +63,8 @@
             this.txtVelocidad = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtIniciar = new System.Windows.Forms.Button();
-            this.txtPausar = new System.Windows.Forms.Button();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.btnPausar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -96,7 +97,7 @@
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1012, 511);
+            this.groupBox1.Size = new System.Drawing.Size(1012, 503);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MEDICIÓN CONTINUA DE GAS";
@@ -113,12 +114,15 @@
             // 
             // txtZzp
             // 
-            this.txtZzp.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZzp.BackColor = System.Drawing.Color.White;
+            this.txtZzp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtZzp.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtZzp.Location = new System.Drawing.Point(366, 9);
             this.txtZzp.Name = "txtZzp";
+            this.txtZzp.ReadOnly = true;
             this.txtZzp.Size = new System.Drawing.Size(117, 50);
             this.txtZzp.TabIndex = 3;
-            this.txtZzp.Text = "";
+            this.txtZzp.Text = "0";
             // 
             // label9
             // 
@@ -145,12 +149,15 @@
             // 
             // txtLamda
             // 
-            this.txtLamda.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLamda.BackColor = System.Drawing.Color.White;
+            this.txtLamda.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLamda.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLamda.Location = new System.Drawing.Point(366, 9);
             this.txtLamda.Name = "txtLamda";
+            this.txtLamda.ReadOnly = true;
             this.txtLamda.Size = new System.Drawing.Size(117, 50);
             this.txtLamda.TabIndex = 3;
-            this.txtLamda.Text = "";
+            this.txtLamda.Text = "0";
             // 
             // label7
             // 
@@ -177,12 +184,15 @@
             // 
             // txtCo2
             // 
-            this.txtCo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCo2.BackColor = System.Drawing.Color.White;
+            this.txtCo2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCo2.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCo2.Location = new System.Drawing.Point(366, 9);
             this.txtCo2.Name = "txtCo2";
+            this.txtCo2.ReadOnly = true;
             this.txtCo2.Size = new System.Drawing.Size(117, 50);
             this.txtCo2.TabIndex = 3;
-            this.txtCo2.Text = "";
+            this.txtCo2.Text = "0";
             // 
             // label10
             // 
@@ -209,12 +219,15 @@
             // 
             // txtHc
             // 
-            this.txtHc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHc.BackColor = System.Drawing.Color.White;
+            this.txtHc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHc.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHc.Location = new System.Drawing.Point(366, 9);
             this.txtHc.Name = "txtHc";
+            this.txtHc.ReadOnly = true;
             this.txtHc.Size = new System.Drawing.Size(117, 50);
             this.txtHc.TabIndex = 3;
-            this.txtHc.Text = "";
+            this.txtHc.Text = "0";
             // 
             // label8
             // 
@@ -241,12 +254,15 @@
             // 
             // txtNo
             // 
-            this.txtNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNo.BackColor = System.Drawing.Color.White;
+            this.txtNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNo.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNo.Location = new System.Drawing.Point(366, 9);
             this.txtNo.Name = "txtNo";
+            this.txtNo.ReadOnly = true;
             this.txtNo.Size = new System.Drawing.Size(117, 50);
             this.txtNo.TabIndex = 3;
-            this.txtNo.Text = "";
+            this.txtNo.Text = "0";
             // 
             // label5
             // 
@@ -273,12 +289,15 @@
             // 
             // txtCoCorregido
             // 
-            this.txtCoCorregido.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCoCorregido.BackColor = System.Drawing.Color.White;
+            this.txtCoCorregido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCoCorregido.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCoCorregido.Location = new System.Drawing.Point(366, 9);
             this.txtCoCorregido.Name = "txtCoCorregido";
+            this.txtCoCorregido.ReadOnly = true;
             this.txtCoCorregido.Size = new System.Drawing.Size(117, 50);
             this.txtCoCorregido.TabIndex = 3;
-            this.txtCoCorregido.Text = "";
+            this.txtCoCorregido.Text = "0";
             // 
             // label6
             // 
@@ -305,12 +324,15 @@
             // 
             // txt02
             // 
-            this.txt02.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt02.BackColor = System.Drawing.Color.White;
+            this.txt02.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt02.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt02.Location = new System.Drawing.Point(366, 9);
             this.txt02.Name = "txt02";
+            this.txt02.ReadOnly = true;
             this.txt02.Size = new System.Drawing.Size(117, 50);
             this.txt02.TabIndex = 3;
-            this.txt02.Text = "";
+            this.txt02.Text = "0";
             // 
             // label4
             // 
@@ -337,12 +359,15 @@
             // 
             // txtCO
             // 
-            this.txtCO.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCO.BackColor = System.Drawing.Color.White;
+            this.txtCO.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCO.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCO.Location = new System.Drawing.Point(366, 9);
             this.txtCO.Name = "txtCO";
+            this.txtCO.ReadOnly = true;
             this.txtCO.Size = new System.Drawing.Size(117, 50);
             this.txtCO.TabIndex = 3;
-            this.txtCO.Text = "";
+            this.txtCO.Text = "0";
             // 
             // label3
             // 
@@ -397,12 +422,15 @@
             // 
             // txtTemperatura
             // 
-            this.txtTemperatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTemperatura.BackColor = System.Drawing.Color.White;
+            this.txtTemperatura.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTemperatura.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTemperatura.Location = new System.Drawing.Point(130, 9);
             this.txtTemperatura.Name = "txtTemperatura";
+            this.txtTemperatura.ReadOnly = true;
             this.txtTemperatura.Size = new System.Drawing.Size(117, 50);
             this.txtTemperatura.TabIndex = 3;
-            this.txtTemperatura.Text = "";
+            this.txtTemperatura.Text = "0";
             // 
             // panel3
             // 
@@ -415,12 +443,15 @@
             // 
             // txtVelocidad
             // 
-            this.txtVelocidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVelocidad.BackColor = System.Drawing.Color.White;
+            this.txtVelocidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtVelocidad.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVelocidad.Location = new System.Drawing.Point(130, 9);
             this.txtVelocidad.Name = "txtVelocidad";
+            this.txtVelocidad.ReadOnly = true;
             this.txtVelocidad.Size = new System.Drawing.Size(117, 50);
             this.txtVelocidad.TabIndex = 3;
-            this.txtVelocidad.Text = "";
+            this.txtVelocidad.Text = "0";
             // 
             // panel1
             // 
@@ -444,37 +475,42 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.UseMnemonic = false;
             // 
-            // txtIniciar
+            // btnIniciar
             // 
-            this.txtIniciar.Location = new System.Drawing.Point(423, 513);
-            this.txtIniciar.Name = "txtIniciar";
-            this.txtIniciar.Size = new System.Drawing.Size(104, 42);
-            this.txtIniciar.TabIndex = 1;
-            this.txtIniciar.Text = "INICIAR";
-            this.txtIniciar.UseVisualStyleBackColor = true;
-            this.txtIniciar.Click += new System.EventHandler(this.txtIniciar_Click);
+            this.btnIniciar.BackColor = System.Drawing.Color.Transparent;
+            this.btnIniciar.Font = new System.Drawing.Font("Open Sans Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciar.Location = new System.Drawing.Point(423, 519);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(104, 42);
+            this.btnIniciar.TabIndex = 1;
+            this.btnIniciar.Text = ">";
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.txtIniciar_Click);
             // 
-            // txtPausar
+            // btnPausar
             // 
-            this.txtPausar.Location = new System.Drawing.Point(533, 513);
-            this.txtPausar.Name = "txtPausar";
-            this.txtPausar.Size = new System.Drawing.Size(104, 42);
-            this.txtPausar.TabIndex = 2;
-            this.txtPausar.Text = "PAUSAR";
-            this.txtPausar.UseVisualStyleBackColor = true;
-            this.txtPausar.Click += new System.EventHandler(this.txtPausar_Click);
+            this.btnPausar.BackColor = System.Drawing.Color.Transparent;
+            this.btnPausar.Image = ((System.Drawing.Image)(resources.GetObject("btnPausar.Image")));
+            this.btnPausar.Location = new System.Drawing.Point(533, 519);
+            this.btnPausar.Name = "btnPausar";
+            this.btnPausar.Size = new System.Drawing.Size(104, 42);
+            this.btnPausar.TabIndex = 2;
+            this.btnPausar.UseVisualStyleBackColor = false;
+            this.btnPausar.Click += new System.EventHandler(this.txtPausar_Click);
             // 
             // gasControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1023, 564);
-            this.Controls.Add(this.txtPausar);
-            this.Controls.Add(this.txtIniciar);
+            this.Controls.Add(this.btnPausar);
+            this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.groupBox1);
             this.Name = "gasControlForm";
             this.Text = "gasControlForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.gasControlForm_FormClosing);
+            this.Load += new System.EventHandler(this.gasControlForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
@@ -537,8 +573,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RichTextBox txtVelocidad;
-        private System.Windows.Forms.Button txtIniciar;
-        private System.Windows.Forms.Button txtPausar;
+        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Button btnPausar;
         private System.Windows.Forms.RichTextBox txtTemperatura;
     }
 }
