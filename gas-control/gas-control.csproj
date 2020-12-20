@@ -66,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -81,7 +82,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Static\" />
+    <None Include="Resources\Tocar_I.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proximo.png" />
+    <None Include="Resources\pausa.png" />
+    <None Include="Resources\tocar %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pausa_I.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proximo_I.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

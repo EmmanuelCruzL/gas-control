@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace gas_control
         Timer timerFast = new Timer();
         Timer timerLow = new Timer();
         randomNumber random = new randomNumber();
-        
+        bool ispause = false;
         public gasControlForm()
         {
             InitializeComponent();
@@ -57,10 +58,11 @@ namespace gas_control
 
         void enableTimer(bool opt)
         {
-            btnIniciar.Text = ">>";
+            string dir = Path.GetDirectoryName(Application.ExecutablePath);
+            btnIniciar.Image = gas_control.Properties.Resources.Proximo_I;
             timerLow.Enabled = opt;
             timerFast.Enabled = opt;
-           
+            ispause = true;
 
         }
 
@@ -74,10 +76,10 @@ namespace gas_control
         {
             enableTimer(true);
            
-            if(btnIniciar.Text == ">>" )
+            if(ispause)
             {
-                btnIniciar.Text = ">";
-                
+                btnIniciar.Image = gas_control.Properties.Resources.Tocar_I;
+
             }
 
 

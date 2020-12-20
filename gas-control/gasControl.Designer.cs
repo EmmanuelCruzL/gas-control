@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gasControlForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.txtZzp = new System.Windows.Forms.RichTextBox();
@@ -63,8 +62,8 @@
             this.txtVelocidad = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnIniciar = new System.Windows.Forms.Button();
             this.btnPausar = new System.Windows.Forms.Button();
+            this.btnIniciar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -475,33 +474,33 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.UseMnemonic = false;
             // 
-            // btnIniciar
-            // 
-            this.btnIniciar.BackColor = System.Drawing.Color.Transparent;
-            this.btnIniciar.Font = new System.Drawing.Font("Open Sans Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.Location = new System.Drawing.Point(423, 519);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(104, 42);
-            this.btnIniciar.TabIndex = 1;
-            this.btnIniciar.Text = ">";
-            this.btnIniciar.UseVisualStyleBackColor = false;
-            this.btnIniciar.Click += new System.EventHandler(this.txtIniciar_Click);
-            // 
             // btnPausar
             // 
-            this.btnPausar.BackColor = System.Drawing.Color.Transparent;
-            this.btnPausar.Image = ((System.Drawing.Image)(resources.GetObject("btnPausar.Image")));
-            this.btnPausar.Location = new System.Drawing.Point(533, 519);
+            this.btnPausar.BackColor = System.Drawing.Color.Navy;
+            this.btnPausar.Image = global::gas_control.Properties.Resources.Pausa_I;
+            this.btnPausar.Location = new System.Drawing.Point(527, 513);
             this.btnPausar.Name = "btnPausar";
-            this.btnPausar.Size = new System.Drawing.Size(104, 42);
+            this.btnPausar.Size = new System.Drawing.Size(113, 48);
             this.btnPausar.TabIndex = 2;
             this.btnPausar.UseVisualStyleBackColor = false;
             this.btnPausar.Click += new System.EventHandler(this.txtPausar_Click);
             // 
+            // btnIniciar
+            // 
+            this.btnIniciar.BackColor = System.Drawing.Color.Navy;
+            this.btnIniciar.Font = new System.Drawing.Font("Open Sans Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciar.Image = global::gas_control.Properties.Resources.Tocar_I;
+            this.btnIniciar.Location = new System.Drawing.Point(390, 513);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(111, 48);
+            this.btnIniciar.TabIndex = 1;
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.txtIniciar_Click);
+            // 
             // gasControlForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1023, 564);
             this.Controls.Add(this.btnPausar);
