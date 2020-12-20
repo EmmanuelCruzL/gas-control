@@ -1,0 +1,9 @@
+D:\Proyects\repositories\gas-control\gas-control\bin\Debug\gas-control.exe.config
+D:\Proyects\repositories\gas-control\gas-control\bin\Debug\gas-control.exe
+D:\Proyects\repositories\gas-control\gas-control\bin\Debug\gas-control.pdb
+D:\Proyects\repositories\gas-control\gas-control\obj\Debug\gas-control.csprojAssemblyReference.cache
+D:\Proyects\repositories\gas-control\gas-control\obj\Debug\gas_control.gasControlForm.resources
+D:\Proyects\repositories\gas-control\gas-control\obj\Debug\gas_control.Properties.Resources.resources
+D:\Proyects\repositories\gas-control\gas-control\obj\Debug\gas-control.csproj.GenerateResource.cache
+D:\Proyects\repositories\gas-control\gas-control\obj\Debug\gas-control.exe
+D:\Proyects\repositories\gas-control\gas-control\obj\Debug\gas-control.pdb
